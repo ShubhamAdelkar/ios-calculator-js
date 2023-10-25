@@ -1,0 +1,112 @@
+:root {
+    --bgcolor: #F0EEED;
+    --boxcolor: #000000;
+    --button-extra: #A7A6A7;
+    --button-operator: #FF9E09;
+    --button-digit: #343434;
+    --font-inter: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    font-family: var(--font-inter);
+    background-color: var(--bgcolor);
+}
+
+.calculator {
+    max-width: 306px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 16px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+    background-color: var(--boxcolor);
+}
+
+input {
+    cursor: not-allowed;
+    border: none;
+    border-radius: 34px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 90px;
+    color: white;
+    outline: none;
+    font-size: 56px;
+    background-color: var(--boxcolor);
+}
+
+.keys {
+    border: none;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button, .js-clear, .js-del {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 14px;
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover, .js-clear:hover, .js-del:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    scale: 0.99;
+}
+
+button:active, .js-clear:active, .js-del:active{
+    border: 3px solid white;
+}
+
+.button-extra {
+    background-color: var(--button-extra);
+}
+
+.button-operator {
+    color: white;
+    background-color: var(--button-operator);
+}
+
+.button-digit {
+    color: white;
+    background-color: var(--button-digit);
+}
+
+.button-z {
+    color: white;
+    width: 132px;
+    border-radius: 40px;
+    grid-column: span 2;
+    background-color: var(--button-digit);
+}
+
+p, span {
+    color: var(--button-extra);
+    margin: 0px;
+    padding: 0;
+    font-size: 10px;
+    padding-top: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+span:hover {
+    color: #F0EEED;
+    cursor: pointer;
+}
