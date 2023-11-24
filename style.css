@@ -18,9 +18,9 @@ body {
 }
 
 .calculator {
-    max-width: 306px;
-    margin: 0 auto;
-    margin-top: 100px;
+    max-width: 300px;
+    margin: 0px auto;
+    margin-top: 66px;
     padding: 16px;
     padding-bottom: 20px;
     border-radius: 40px;
@@ -51,7 +51,9 @@ input {
     grid-template-columns: repeat(4, 1fr);
 }
 
-button, .js-clear, .js-del {
+button,
+.js-clear,
+.js-del {
     border: none;
     display: flex;
     justify-content: center;
@@ -64,13 +66,17 @@ button, .js-clear, .js-del {
     transition: all 0.1s ease-in-out;
 }
 
-button:hover, .js-clear:hover, .js-del:hover {
+button:hover,
+.js-clear:hover,
+.js-del:hover {
     cursor: pointer;
     opacity: 0.8;
     scale: 0.99;
 }
 
-button:active, .js-clear:active, .js-del:active{
+button:active,
+.js-clear:active,
+.js-del:active {
     border: 3px solid white;
 }
 
@@ -96,7 +102,8 @@ button:active, .js-clear:active, .js-del:active{
     background-color: var(--button-digit);
 }
 
-p, span {
+p,
+span {
     color: var(--button-extra);
     margin: 0px;
     padding: 0;
